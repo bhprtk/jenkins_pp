@@ -6,6 +6,7 @@ describe('Array', function() {
         for(let i = 0; i < 9999999999999999; i++) {
           sum = sum * i
         }
+        
         assert.equal(-1, [1,2,3].indexOf(4))
     })
   })
