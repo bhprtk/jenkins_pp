@@ -3,7 +3,7 @@ describe('Array', function() {
   describe('#indexOf()', function() {
     it('should return -1 when the value is not present', function(done){
       let sum = 1;
-      for(let i = 0; i < 999999999; i++) {
+      for(let i = 0; i < 99999999; i++) {
         sum = sum * i
       }
         
