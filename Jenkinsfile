@@ -7,8 +7,7 @@ pipeline {
             }
         }
     }
-}
-
-void runTests(def args) {
-    sh 'npm test'
+    void runTests(def args) {
+        sh 'npm test'
+    }
 }
