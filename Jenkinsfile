@@ -9,13 +9,12 @@
 //     }
 // }
 
+def runTests(args) {
+    sh 'npm test'
+}
 
 node {
     stage('Test') {
         runTests()
     }
-}
-
-void runTests(def args) {
-    sh 'npm test'
 }
