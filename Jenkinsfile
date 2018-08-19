@@ -1,16 +1,21 @@
-pipeline {
-    node {
-        agent any
-        stages {
-            stage('Test') {
-                steps {
-                    runTests()
-                }
-            }
-        }
+// pipeline {
+//     agent any
+//     stages {
+//         stage('Test') {
+//             steps {
+//                 runTests()
+//             }
+//         }
+//     }
+// }
+
+
+node {
+    stage('Test') {
+        runTests()
     }
 }
 
-def runTests(args) {
+void runTests(def args) {
     sh 'npm test'
 }
