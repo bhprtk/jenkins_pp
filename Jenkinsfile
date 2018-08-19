@@ -3,8 +3,12 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'npm test'
+                runTests()
             }
         }
     }
+}
+
+void runTests(def args) {
+    sh 'npm test'
 }
