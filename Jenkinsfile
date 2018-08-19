@@ -1,13 +1,15 @@
 pipeline {
-    agent any
-    stages {
-        stage('Test') {
-            steps {
-                runTests()
+    node {
+        agent any
+        stages {
+            stage('Test') {
+                steps {
+                    runTests()
+                }
             }
         }
     }
-    void runTests(def args) {
+    def runTests(args) {
         sh 'npm test'
     }
 }
