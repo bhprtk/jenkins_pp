@@ -9,7 +9,8 @@ pipeline {
             }
         }
     }
-    def runTests(args) {
-        sh 'npm test'
-    }
+}
+
+def runTests(args) {
+    sh 'npm test'
 }
