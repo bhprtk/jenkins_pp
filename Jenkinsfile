@@ -11,9 +11,8 @@
 
 
 node {
-    stage('Test') {
-        runTests()
-    }
+    stage 'Test'
+    runTests()
 }
 
 void runTests(def args) {
