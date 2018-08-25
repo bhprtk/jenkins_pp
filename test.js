@@ -2,7 +2,7 @@ const assert = require('assert')
 describe('Array', function() {
   describe('#indexOf()', function() {
     it('test 1', function(done){
-        let product = 1
+      let product = 1
         for(let i = 1; i < 9999999999999; i++){ 
           product *= i
         }
