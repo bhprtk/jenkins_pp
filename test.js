@@ -10,7 +10,6 @@ describe('Array', function() {
         done()
     })
     it('test 2', function(done){
-        
         assert.equal(-1, [1,2,3].indexOf(4))
         done()
     })
