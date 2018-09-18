@@ -1,1 +1,1 @@
-![Alt text](jenkins_pp.png)
+![alt text](jenkins_pp.png)
